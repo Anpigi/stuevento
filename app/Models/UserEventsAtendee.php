@@ -1,12 +1,11 @@
 <?php
-// app/Models/UserEventsAttendee.php
-
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
 class UserEventsAttendee extends Model
 {
+    protected $table = 'user_events_attendees';
     protected $fillable = [
         'user_id',
         'event_id',

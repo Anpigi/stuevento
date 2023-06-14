@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eventos</title>
     <style>
         body {
             font-family: "Arial Rounded MT", Arial, sans-serif;
@@ -56,12 +49,11 @@
             text-decoration: underline;
         }
     </style>
-</head>
-
 <body>
     <div class="container">
         <h1 class="title">Eventos</h1>
         <a href="{{ route('events.create') }}" class="btn btn-primary">Crear evento</a>
+        <h1 class="title">Lista de Eventos</h1>
         <ul>
             @foreach($events as $event)
             <li>
@@ -72,4 +64,3 @@
     </div>
 </body>
 
-</html>

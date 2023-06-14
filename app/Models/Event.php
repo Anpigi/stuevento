@@ -3,7 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-
+use App\Models\UserEventsAttendee;
 class Event extends Model
 {
     protected $fillable = [
@@ -20,7 +20,7 @@ class Event extends Model
 
     public function attendees()
     {
-        return $this->hasMany(UserEventsAttendee::class);
+        return $this->belongsToMany(User::class ,'user_events_attendees');
     }
 }
 
